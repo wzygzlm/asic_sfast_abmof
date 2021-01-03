@@ -1,0 +1,87 @@
+##########################################################################
+#  Title      : Create pg nets and logical connectivity.
+#  Project    : gf 28 dz flow
+##########################################################################
+#  File       : globalnet.cpf
+#  Author     : Beat Muheim  <muheim@ee.ethz.ch>
+#  Company    : Microelectronics Design Center (DZ), ETH Zurich
+#  Created    : 2015-10-07
+#  Last update: 2015-10-07
+##########################################################################
+#  Description : Create the power/ground nets and the logical connectivity,
+#                in the Common Power Format (cpf).
+#                To perform the cpf us following commands, the set 
+#                'set init_cpf_file' is somehow not working.
+#
+#                Perform:
+#                loadCPF scripts/globalnet.cpf
+#                commitCPF
+#
+#  Inputs      : $DESIGN
+#  Outputs     :   
+#  Resources   :
+##########################################################################
+#  Copyright (c) 2015 Microelectronics Design Center, ETH Zurich
+##########################################################################
+# v0.1  - bm - Thu Aug 27 13:06:42 CEST 2015
+#  - adapt to gf
+##########################################################################
+
+#-------------------------------------------------------------------------------
+# setting
+#-------------------------------------------------------------------------------
+set_cpf_version 1.1
+set_hierarchy_separator "/"
+
+#-------------------------------------------------------------------------------
+# design
+#-------------------------------------------------------------------------------
+set_design $DESIGN
+#
+
+#-------------------------------------------------------------------------------
+# physical dmplementation
+#-------------------------------------------------------------------------------
+# create power domains
+create_power_domain -name PD_default -default
+
+
+# declare power and ground nets
+create_power_nets  -nets VDD
+create_ground_nets -nets VSS
+
+# declare bias nets
+#create_bias_net    -net VPW
+#create_bias_net    -net VNW
+#update_power_domain -name PD_default -pmos_bias_net VPW  -nmos_bias_net VNW
+
+# create global connections
+create_global_connection -net VDD  -pins VDD
+create_global_connection -net VSS  -pins VSS
+
+# create global connections (memoris)
+create_global_connection -net VDD  -pins VDDCE
+create_global_connection -net VDD  -pins VDDPE
+create_global_connection -net VSS  -pins VSSE
+
+
+#create_global_connection -net VDD -pins VPW
+#create_global_connection -net VSS -pins VNW
+
+#  create_global_connection -net VPW -pins VPW
+#  create_global_connection -net VNW -pins VNW
+
+#?? update_power_domain -name PD_default -primary_power_net VDD -primary_ground_net VSS
+
+# create nominal conditions
+create_nominal_condition -name NC_medium -state on -voltage 1.0
+
+# create power mode
+create_power_mode -name PM_default_medium \
+                  -domain_conditions { PD_default@NC_medium} \
+                  -default
+
+#-------------------------------------------------------------------------------
+# 
+#-------------------------------------------------------------------------------
+end_design

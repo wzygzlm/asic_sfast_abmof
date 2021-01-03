@@ -1,0 +1,218 @@
+Jan 03 20:41:24   -------------------------------------------------------------------------------------
+Jan 03 20:41:24   -- gf28 v0.1
+Jan 03 20:41:24   -- call: gf28 
+Jan 03 20:41:24   -------------------------------------------------------------------------------------
+Jan 03 20:41:27   load db/config from /usr/pack/designkits-1.0-ma/startup/db/software.ascii
+Jan 03 20:41:27   load db/config from /usr/pack/global-28-kgf/dz/cockpit_gf28/db/kit.ascii
+Jan 03 20:41:27   load db/config from /usr/pack/global-28-kgf/dz/cockpit_gf28/conf/default.ascii
+Jan 03 20:41:31   copy /usr/pack/global-28-kgf/dz/dz_tools/.llamaconfig to ./.llamaconfig
+Jan 03 20:41:31   copy /usr/pack/global-28-kgf/dz/dz_tools/.svn_setup_gf28.csh to ./.svn_setup_gf28.csh
+Jan 03 20:41:31   copy /usr/pack/global-28-kgf/dz/dz_tools/.gen_gitignore.pl to ./.gen_gitignore.pl
+Jan 03 20:41:31   copy /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/.setPDK.csh to ./.setPDK.csh
+Jan 03 20:41:31   create directory technology
+Jan 03 20:41:31   create directory technology/lib
+Jan 03 20:41:31   create directory technology/db
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_125c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_125c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_m40c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_m40c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_125c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_125c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_m40c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_m40c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_125c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_125c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_m40c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_m40c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_125c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_125c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_m40c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_m40c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p10v_25c.lib_ecsm_t -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lib-ecsm-t/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p10v_25c.lib_ecsm_t
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p30v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p30v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p30v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p30v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p60v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p60v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p60v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p60v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p95v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p95v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p95v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p95v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p30v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p30v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p30v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p30v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p60v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p60v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p60v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p60v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p95v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p95v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p95v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p95v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p10v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p10v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p10v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p10v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p40v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p40v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p40v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p40v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p65v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p65v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p65v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p65v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p10v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p10v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p10v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p10v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p40v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p40v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p40v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p40v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p65v_125c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p65v_125c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p65v_m40c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p65v_m40c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p20v_25c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p20v_25c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p50v_25c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p50v_25c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p80v_25c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p80v_25c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p20v_25c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p20v_25c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p50v_25c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p50v_25c.lib
+Jan 03 20:41:31   create link ./technology/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p80v_25c.lib -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lib/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p80v_25c.lib
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_125c.db
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_125c.db
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_125c.db
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_125c.db
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db
+Jan 03 20:41:31   create link ./technology/db/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p10v_25c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/db/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p10v_25c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p30v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p30v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p30v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p30v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p60v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p60v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p60v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p60v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p95v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p95v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p95v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p10v_1p95v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p30v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p30v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p30v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p30v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p60v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p60v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p60v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p60v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p95v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p95v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p95v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ff_nominal_1p155v_1p95v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p10v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p10v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p10v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p10v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p40v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p40v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p40v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p40v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p65v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p65v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p65v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_0p90v_1p65v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p10v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p10v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p10v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p10v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p40v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p40v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p40v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p40v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p65v_125c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p65v_125c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p65v_m40c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_ss_nominal_1p045v_1p65v_m40c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p20v_25c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p20v_25c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p50v_25c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p50v_25c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p80v_25c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p80v_25c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p20v_25c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p20v_25c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p50v_25c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p50v_25c.db
+Jan 03 20:41:31   create link ./technology/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p80v_25c.db -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/db/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p10v_1p80v_25c.db
+Jan 03 20:41:31   create directory docs
+Jan 03 20:41:31   create link ./docs/28SLP.CalibreDRC.rel_notes.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/Calibre/28SLP.CalibreDRC.rel_notes.pdf
+Jan 03 20:41:31   create link ./docs/pdk-28SLP-V1.1_0.0_Calibre_ERC.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/Calibre/pdk-28SLP-V1.1_0.0_Calibre_ERC.pdf
+Jan 03 20:41:31   create link ./docs/pdk-28SLP-V1.1_0.0_Calibre_LVS.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/Calibre/pdk-28SLP-V1.1_0.0_Calibre_LVS.pdf
+Jan 03 20:41:31   create link ./docs/cmos28slp_UserGuide.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/cdslib/6U1x_2T8x_LB/doc/cmos28slp_UserGuide.pdf
+Jan 03 20:41:31   create link ./docs/Spectre_BB_ESD_MRG.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/docs/Spectre_BB_ESD_MRG.pdf
+Jan 03 20:41:31   create link ./docs/Spectre_BB_IDDQ_MRG.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/docs/Spectre_BB_IDDQ_MRG.pdf
+Jan 03 20:41:31   create link ./docs/Spectre_BB_MRG.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/docs/Spectre_BB_MRG.pdf
+Jan 03 20:41:31   create link ./docs/Spectre_BB_ReleaseNotes.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/docs/Spectre_BB_ReleaseNotes.pdf
+Jan 03 20:41:31   create link ./docs/design_rules.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/docs/design_rules.pdf
+Jan 03 20:41:31   create link ./docs/pdk-28SLP-V1.1_0.2_FullPDK_UserGuide.pdf -> /usr/pack/global-28-kgf/dz/../gf/slp/2015.10/docs/pdk-28SLP-V1.1_0.2_FullPDK_UserGuide.pdf
+Jan 03 20:41:31   create link ./docs/sc7mc_cmos28slp_base_rvt_c34_databook.pdf -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/doc/sc7mc_cmos28slp_base_rvt_c34_databook.pdf
+Jan 03 20:41:31   create link ./docs/sc7mc_cmos28slp_base_rvt_c34_userguide.pdf -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/doc/sc7mc_cmos28slp_base_rvt_c34_userguide.pdf
+Jan 03 20:41:31   create link ./docs/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_databook_1p2.pdf -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/doc/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_databook_1p2.pdf
+Jan 03 20:41:31   create link ./docs/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_databook_1p5.pdf -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/doc/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_databook_1p5.pdf
+Jan 03 20:41:31   create link ./docs/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_databook_1p8.pdf -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/doc/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_databook_1p8.pdf
+Jan 03 20:41:31   create link ./docs/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_userguide.pdf -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/doc/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_userguide.pdf
+Jan 03 20:41:31   create directory modelsim
+Jan 03 20:41:31   create directory simvectors
+Jan 03 20:41:31   create directory sourcecode
+Jan 03 20:41:31   copy modelsim/BTeW6Z7vLg (generated data dumped to tempfile) to ./modelsim/modelsim.ini
+Jan 03 20:41:31   create modelsim working library modelsim/work
+Jan 03 20:41:31   create directory synopsys
+Jan 03 20:41:31   create directory synopsys/DDC
+Jan 03 20:41:31   create directory synopsys/WORK
+Jan 03 20:41:31   create directory synopsys/scripts
+Jan 03 20:41:31   create directory synopsys/netlists
+Jan 03 20:41:31   create directory synopsys/reports
+Jan 03 20:41:31   copy synopsys/S3xtpD7jmJ (generated data dumped to tempfile) to ./synopsys/.synopsys_dc.setup
+Jan 03 20:41:31   create directory synopsys/alib
+Jan 03 20:41:31   create directory synopsys/alib/alib-52
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_125c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_125c.db.alib
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_m40c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_m40c.db.alib
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_125c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_125c.db.alib
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_m40c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_m40c.db.alib
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_125c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_125c.db.alib
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_m40c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_m40c.db.alib
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_125c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_125c.db.alib
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_m40c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_m40c.db.alib
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db.alib
+Jan 03 20:41:31   create link synopsys/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p10v_25c.db.alib -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/synopsys.dz/alib/alib-52/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p10v_25c.db.alib
+Jan 03 20:41:31   create directory tetramax
+Jan 03 20:41:31   create directory tetramax/scripts
+Jan 03 20:41:31   create directory tetramax/reports
+Jan 03 20:41:31   create directory tetramax/pattern
+Jan 03 20:41:31   copy tetramax/scripts/4ECFJjsMZ2 (generated data dumped to tempfile) to ./tetramax/scripts/read_lib.tcl
+Jan 03 20:41:31   copy /usr/pack/global-28-kgf/dz/tetramax/2014.09/tmaxtcl.rc to ./tetramax/tmaxtcl.rc
+Jan 03 20:41:31   copy /usr/pack/global-28-kgf/dz/tetramax/2014.09/tmax.tcl to ./tetramax/scripts/tmax.tcl
+Jan 03 20:41:31   create directory tmp
+Jan 03 20:41:31   create directory encounter
+Jan 03 20:41:31   create directory encounter/reports
+Jan 03 20:41:31   create directory encounter/src
+Jan 03 20:41:31   create directory encounter/src/sample
+Jan 03 20:41:31   create directory encounter/scripts
+Jan 03 20:41:31   create directory encounter/save
+Jan 03 20:41:31   create directory encounter/out
+Jan 03 20:41:31   create directory technology/lef
+Jan 03 20:41:31   create directory technology/cl
+Jan 03 20:41:31   create directory technology/qrc
+Jan 03 20:41:31   create link ./technology/lef/tech.lef -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/tech.lef
+Jan 03 20:41:31   create link ./technology/lef/sc7mc_cmos28slp_base_rvt_c34.lef -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/lef/sc7mc_cmos28slp_base_rvt_c34.lef
+Jan 03 20:41:31   create link ./technology/lef/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_6U1x_2T8x_LB.lef -> /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/lef/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_6U1x_2T8x_LB.lef
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_125c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_125c.cl
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_m40c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p10v_m40c.cl
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_125c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_125c.cl
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_m40c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_ff_nominal_min_1p155v_m40c.cl
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_125c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_125c.cl
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_m40c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_0p90v_m40c.cl
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_125c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_125c.cl
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_m40c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_ss_nominal_max_1p045v_m40c.cl
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.cl
+Jan 03 20:41:31   create link ./technology/cl/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p10v_25c.cl -> /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/voltagestorm/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p10v_25c.cl
+Jan 03 20:41:31   create link ./technology/qrc/qrcTechFile_FuncCmax -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/qrcTechFile_FuncCmax
+Jan 03 20:41:31   create link ./technology/qrc/qrcTechFile_FuncCmin -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/qrcTechFile_FuncCmin
+Jan 03 20:41:31   create link ./technology/qrc/qrcTechFile_FuncRCmax -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/qrcTechFile_FuncRCmax
+Jan 03 20:41:31   create link ./technology/qrc/qrcTechFile_FuncRCmin -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/qrcTechFile_FuncRCmin
+Jan 03 20:41:31   create link ./technology/qrc/qrcTechFile_nominal -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/qrcTechFile_nominal
+Jan 03 20:41:31   create link ./technology/qrc/qrcTechFile_SigCmax -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/qrcTechFile_SigCmax
+Jan 03 20:41:31   create link ./technology/qrc/qrcTechFile_SigCmin -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/qrcTechFile_SigCmin
+Jan 03 20:41:31   create link ./technology/qrc/qrcTechFile_SigRCmax -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/qrcTechFile_SigRCmax
+Jan 03 20:41:31   create link ./technology/qrc/qrcTechFile_SigRCmin -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/qrcTechFile_SigRCmin
+Jan 03 20:41:31   create link ./technology/tech.map -> /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/tech.map
+Jan 03 20:41:31   copy encounter/src/sample/SE4babFKpV (generated data dumped to tempfile) to ./encounter/src/sample/chip.globals
+Jan 03 20:41:31   copy encounter/src/sample/TPhKhSmLxH (generated data dumped to tempfile) to ./encounter/src/sample/mmmc.view.tcl
+Jan 03 20:41:32   copy encounter/scripts/78PSEEjR36 (generated data dumped to tempfile) to ./encounter/scripts/exportall.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/enc.tcl to ./encounter/enc.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/checkdesign.tcl to ./encounter/scripts/checkdesign.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/physical_cell-insert.tcl to ./encounter/scripts/physical_cell-insert.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/tiehilo.tcl to ./encounter/scripts/tiehilo.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/fillcore-insert.tcl to ./encounter/scripts/fillcore-insert.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/fillcore-remove.tcl to ./encounter/scripts/fillcore-remove.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/power_grid_sc7mc.tcl to ./encounter/scripts/power_grid_sc7mc.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/globalnet.cpf to ./encounter/scripts/globalnet.cpf
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/encounter.dz/fillperi-insert.tcl to ./encounter/scripts/fillperi-insert.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/encounter.dz/fillperi-remove.tcl to ./encounter/scripts/fillperi-remove.tcl
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/chip.ctstch to ./encounter/src/sample/chip.ctstch
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/mmmc_functional.sdc to ./encounter/src/sample/mmmc_functional.sdc
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/mmmc_shared.sdc to ./encounter/src/sample/mmmc_shared.sdc
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/encounter/14/mmmc_test.sdc to ./encounter/src/sample/mmmc_test.sdc
+Jan 03 20:41:32   create directory calibre
+Jan 03 20:41:32   create directory calibre/drc
+Jan 03 20:41:32   create directory calibre/lvs
+Jan 03 20:41:32   create directory calibre/pex
+Jan 03 20:41:32   create directory calibre/.init
+Jan 03 20:41:32   create directory dfii
+Jan 03 20:41:32   create directory dfii/.init
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/calibre/2015.3/start_calibre to ./calibre/start_calibre
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/calibre/gf28.layerprops to ./calibre/.init/gf28.layerprops
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/calibre/setDRCLVSPEX.csh to ./calibre/.init/setDRCLVSPEX.csh
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/calibre/6U1x_2T8x_LB_2015.10/runset.drc to ./calibre/drc/runset.drc
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/calibre/2015.3/verilog2spice to ./calibre/lvs/verilog2spice
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/calibre/6U1x_2T8x_LB_2015.10/runset.lvs to ./calibre/lvs/runset.lvs
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/calibre/2015.3/dfii/loadCalibreInteractive.il to ./dfii/.init/loadCalibreInteractive.il
+Jan 03 20:41:32   copy calibre/lvs/vgvjAUvgdh (generated data dumped to tempfile) to ./calibre/lvs/verilog.inc
+Jan 03 20:41:32   copy calibre/lvs/chkAmpAO3m (generated data dumped to tempfile) to ./calibre/lvs/spice.inc
+Jan 03 20:41:32   copy dfii/9GiKzLdnaK (generated data dumped to tempfile) to ./dfii/cds.lib
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/dfii/6/.cdsinit to ./dfii/.cdsinit
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/design.scs to ./dfii/design.scs
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/pdk/6U1x_2T8x_LB_2015.10/design_include.scs to ./dfii/design_include.scs
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/dfii/6/start_dfii to ./dfii/start_dfii
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/dfii/6/loadKit.il to ./dfii/.init/loadKit.il
+Jan 03 20:41:32   copy /usr/pack/global-28-kgf/dz/cockpit_gf28/conf/default.ascii to .cockpitrc
+Jan 03 20:41:32   move /home/inichang/.cockpit_loc.gf28 to /home/inichang/.cockpit_loc.gf28~
+Jan 03 20:41:32   copy /home/inichang/l9AcCaCpxh (generated data dumped to tempfile) to /home/inichang/.cockpit_loc.gf28

@@ -1,0 +1,91 @@
+[cockpit]
+  # Do not change this section
+  config = 2015
+
+  # Still Work in Progress
+
+[library]
+  # Setup files will be generated for these libraries.
+  # 
+  # - only libraries that can be found in the "kit.ascii" database
+  #   can be used (see cockpit.log for the full unix path)
+  #   Standard cells, Low VT (fast), Regular VT and High VT (slow) are possible.
+  #   Note that you can mix and match all VTs.. 
+  # - use "-update" or "-rewrite" for the changes to take effect  
+  #
+  # The following libraries are available:
+  #   technology    : 28SLP
+  #
+  #   designkit     : 6U1x_2T8x_LB_2015.01   (8 Metals from Jan 2015)
+  #                 : 6U1x_2T8x_LB_2015.10   (8 Metals from Oct 2015)
+  #
+  # For a comparison list see: 
+  # 
+  #   http://eda.ee.ethz.ch/index.php/Gf28#Libraries 
+  # 
+  #   libraries     : SuperLow VT (fastfast)     Low VT (fast)                Regular VT                 High VT (slow)
+  #       7 track     sc7mc_base_slvt_c30_r1p0   sc7mc_base_lvt_c34_r1p0      sc7mc_base_rvt_c34_r1p0    sc7mc_base_hvt_c38_r1p0 
+  #
+  #       9 track     sc9_base_slvt_c38_r0p0     sc9_base_lvt_c38_r0p0        sc9_base_rvt_c38_r0p0      sc9_base_hvt_c38_r0p0         
+  #                                                                           sc9_base_rvt_c34_r5p0      sc9_base_hvt_c34_r5p0 
+  #                                              sc9_base_lvt_r5p0            sc9_base_rvt_r5p0          sc9_base_hvt_r5p0 
+  #                   
+  #      12 track     sc12_base_slvt_c38_r0p0    sc12_base_lvt_c38_r0p0       sc12_base_rvt_c38_r0p0     sc12_base_hvt_c38_r0p0 
+  #                                                                           sc12_base_rvt_c34_r5p0     sc12_base_hvt_c34_r5p0
+  #                   sc12_base_slvt_r5p0        sc12_base_lvt_r5p0           sc12_base_rvt_r5p0         sc12_base_hvt_r5p0 
+  # 
+  #   pad-libraries : io_gppr_t18_mv11_mv18_tl25_rvt_dr_r6p0
+  #                   
+  #   mem compiler  : gf28memory
+  #                   
+
+  libs    = 28SLP 6U1x_2T8x_LB_2015.10 \
+            gf28memory \
+            sc7mc_base_rvt_c34_r1p0 \
+            io_gppr_t18_mv11_mv18_tl25_rvt_dr_r6p0
+
+  # send an e-mail to <kgf@ee.ethz.ch> to ask for macros. Currently available
+  # macro datasheets are available under:
+  #   /usr/pack/global-28-kgf/dz/mem/datasheet.dz
+  
+#  macros  = rf_sp_hse_rvt_rvt_1024x32m4 sram_sp_hde_hvt_rvt_4096x64m8
+  macros  = 
+  
+[version]
+  # Setup files will be generated for these software versions. 
+  # - only versions that can be found in the "kit.ascii" database
+  #   can be used (see cockpit.log for the full unix path)
+  # - if you change a version you might need to adjust some
+  #   startups in the [command] section too... 
+  # - use "-update" or "-rewrite" for the changes to take effect  
+
+  # WARNING: The primary purpose is to keep version settings within each
+  # project. Fiddling around will most likely result in an unsupported
+  # combinations and perl errors. Better update this file as a whole
+  # with '-updaterc'. 
+
+  modelsim  =  modelsim-10.4c
+  synopsys  =  synopsys-2014.09
+  tetramax  =  tetramax-2014.09
+  encounter =  encounter-14
+  dfii      =  ic-6
+  calibre   =  calibre-2015.3
+
+[command]
+  # Startup commands available through the GUI buttons.
+  # - startup commands can be modified but need to be compatible with the
+  #   setup file versions selected in the [version] section 
+  # - to add more modelsim/synopsys startups to the GUI just put your own entries
+  #   of the form "(modelsim|synopsys):<label> = <command>" there 
+  # - changes will take effect the next time you start
+
+#  emacs                        =  emacs -f vhdl-mode
+  modelsim                     =  vsim-10.4c
+  synopsys:DC Shell            =  xterm -g 120x40 -T synopsys-2014.09 -e "sh -c 'synopsys-2014.09 dc_shell -64bit | tee view_command.log'"
+  synopsys:DesignVision        =  xterm -g 120x40 -T synopsys-2014.09 -e "sh -c 'synopsys-2014.09 design_vision -64bit -xg_mode | tee view_command.log'"
+  tetramax                     =  synopsys-2014.09 tmax
+  encounter                    =  xterm -g 136x40 -T encounter-14.24 -e "cds_edi14-24.000 encounter"
+  calibre                      =  xterm -g 120x40 -T calibredrv-2015.3 -e "./start_calibre"
+  dfii                         =  ./start_dfii
+  dz:llama                     = llama
+

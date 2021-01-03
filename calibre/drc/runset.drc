@@ -1,0 +1,9 @@
+*drcRulesFile: /usr/pack/global-28-kgf/gf/slp/2015.10/Calibre/DRC/cmos28lp.drc.cal
+*drcRunDir: ../calibre/drc
+*drcLayoutPaths: ../dfii/
+*drcExtraLayoutPaths: /usr/pack/global-28-kgf/gf/pdk-28SLP-1.0_2.0_BCK/BCK/SUPPORTED.GoLd/SUPPORTED.GoLd.gds /usr/pack/global-28-kgf/gf/pdk-28SLP-1.0_2.0_BCK/BCK/SUPPORTED.GoLd/Vendor_SUPPORTED.GoLd.gds
+*drcGoldenLayoutPaths: /usr/pack/global-28-kgf/gf/pdk-28SLP-1.0_2.0_BCK/BCK/SUPPORTED.GoLd/SUPPORTED.GoLd.gds /usr/pack/global-28-kgf/gf/pdk-28SLP-1.0_2.0_BCK/BCK/SUPPORTED.GoLd/Vendor_SUPPORTED.GoLd.gds
+*drcLayoutGetFromViewer: 0
+*drcResultsFile: chip.drc.results
+*drcSummaryFile: chip.drc.summary
+*cmnRunMT: 1

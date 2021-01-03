@@ -1,0 +1,24 @@
+*lvsRulesFile: /usr/pack/global-28-kgf/gf/slp/2015.10/Calibre/LVS/cmos28slp.lvs.cal
+*lvsRunDir: ../calibre/lvs
+*lvsLayoutPaths: chip.calibre.gds
+*lvsLayoutPrimary: chip
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: chip.src.net
+*lvsSourcePrimary: chip
+*lvsSourceGetFromViewer: 1
+*lvsReportFile: chip.lvs.report
+*lvsSpiceFile: chip.lay.net
+# *lvsPowerNames: VDD?
+# *lvsGroundNames: VSS?
+*lvsPowerNames: VDD vdd VDD! vdd! DVDD
+*lvsGroundNames: VSS vss GND VSS! vss! DVSS
+*lvsRecognizeGates: NONE
+*lvsIsolateShorts: 1
+*lvsRunERC: 0
+# *lvsIncludeFiles: /usr/pack/umc-65-kgf/dz/calibre/2011.2/lvs/lvs_options.txt ./lvs_labels.txt
+*lvsTemplate_ES: %l.lay.net
+*cmnShowOptions: 1
+*cmnRunMT: 1
+*cmnWarnLayoutOverwrite: 0
+*cmnWarnSourceOverwrite: 0
+

@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : area
+Design : rwSAEPerfectLoopStre
+Version: Q-2019.12
+Date   : Sun Jan  3 22:03:06 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'rwSAEPerfectLoopStre' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c (File: /home/inichang/minliu_icdesign/technology/db/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db)
+    sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c (File: /home/inichang/minliu_icdesign/technology/db/sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c.db)
+
+Number of ports:                          134
+Number of nets:                          4370
+Number of cells:                         3280
+Number of combinational cells:           2932
+Number of sequential cells:               344
+Number of macros/black boxes:               4
+Number of buf/inv:                        151
+Number of references:                      84
+
+Combinational area:               1601.145017
+Buf/Inv area:                       44.863000
+Noncombinational area:             595.867991
+Macro/Black Box area:           193108.734375
+Net Interconnect area:               0.000000
+
+Total cell area:                195305.747383
+Total area:                     195305.747383
+1

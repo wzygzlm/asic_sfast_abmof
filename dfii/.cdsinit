@@ -1,0 +1,122 @@
+;
+; v0.1 - <muheim@ee.ethz.ch> - Mon Jan 19 09:31:41 CET 2015
+;   - first version, 
+;     copy from  /usr/pack/global-28-kgf/gf/pdk-28SLP-V1.0_7.0/cdslib/6U1x_2T8x_LB/pdk.cdsinit
+;     and second part from the smic-65 flow, /usr/pack/umc-65-kgf/dz/dfii/610/.cdsinit
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; 
+; Last Changed:    $Author: tlingner $
+;                  $DateTime: 2011/08/02 14:32:19 $
+;                  $Change: 38235 $
+;
+; Description:     SKILL file containing recommended settings for this PDK
+;                  to be loaded as part of Virtuoso initialization.
+;
+;
+; Copyright (C) 2011, GLOBALFOUNDRIES, All Rights Reserved.
+;
+; GLOBALFOUNDRIES Confidential
+;
+; This material is provided by GLOBALFOUNDRIES solely on an "AS IS" basis.
+; Neither GLOBALFOUNDRIES, nor any of its employees, makes any representations
+; or warranty of any kind, whether express or implied, or assumes any liability
+; or responsibility for the accuracy, completeness, suitability or usefulness of
+; this material or for any damages resulting from its use
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;-------------------------------------------------------------------------------
+;
+; Required environment setting to enable CDF look-up and callbacks.
+; Alternately, this environment variable can be set in the UNIX shell, or
+; defined in your shell initialization file: .cshrc, .profile, etc.
+;
+setShellEnvVar("CDS_Netlisting_Mode=Analog")
+cdsSetNetlistMode()
+
+;-------------------------------------------------------------------------------
+;
+; Recommended cdsenv settings
+;
+envSetVal("layout"      "viaParamCalcMode"  'cyclic  "minRules")
+envSetVal("layout"      "markNetStopLayer"  'boolean t)
+envSetVal("ams.envOpts" "netlisterMode"     'string  "OSS-based")
+
+;-------------------------------------------------------------------------------
+;
+; Adds selected noWarn message IDs to StreamOut options
+;
+; XSTRM-156: Warning issues for a duplicate entries for layer:purpose.
+;            Since upsized versions of each of the regular and large cuts have
+;            to stream to the same GDS layer and data type output, duplicate
+;            enteries are necessary in the defintion.  These warnings can
+;            safely be ignored.
+; XSTRM-246: Warning issued for layers with cutSize qualifier in layermap whose
+;            material type in technology database is non-cut.
+;            The stream layermap is a common file for all metal stacks.
+;            Depending on the metal stack, some of the via layers are non-valid
+;            and do not have the cut material type. XSTRM-246 warning can safely
+;            be ignored.
+; XSTRM-269: Warning issued for layers with GDS layer numbers outside of
+;            '0 - 32767' range. Calibre can handle numbers within '0 - 65535'
+;            range.
+; XSTRM-270: Warning issued for layers with GDS data type numbers outside of
+;            '0 - 32767' range. Calibre can handle numbers within '0 - 65535'
+;            range.
+;            
+;
+let(
+   (
+      noWarnCurrentList 
+      (noWarnAddList '("156" "246" "269" "270"))
+   )
+   
+   if(boundp('streamOutKeys) && streamOutKeys && listp(streamOutKeys) then
+      if(stringp(streamOutKeys->noWarn) then
+         noWarnCurrentList = parseString(streamOutKeys->noWarn)
+         foreach( item noWarnAddList
+            unless( member(item noWarnCurrentList)
+               noWarnCurrentList = cons(item noWarnCurrentList)
+            )
+         )
+         streamOutKeys->noWarn = buildString(noWarnCurrentList)
+      else
+         streamOutKeys->noWarn = buildString(noWarnAddList)
+      )
+   else
+      streamOutKeys = list(nil 'noWarn buildString(noWarnAddList))
+   )
+   t
+) ; let
+
+;-------------------------------------------------------------------------------
+printf("DZ: BEGIN OF LOCAL CUSTOMIZATION LOADING\n")
+
+let( ( localLibPath addon addonsL )
+
+  localLibPath = "./.init/"
+
+  addonsL = '(
+               "loadCalibreInteractive.il"
+               "loadKit.il"
+             )
+
+  foreach( addon addonsL
+    if( isFile( strcat( localLibPath addon ) ) then
+        load( strcat( localLibPath addon ) )
+    else
+        printf( "DZ: ERROR: load '%s' -> no such file!\n" strcat( localLibPath addon ) )
+    )
+  );foreach
+);let
+
+; This should prevent that the processes that are spawned from
+; ic6 do not get a priority 10 which clashes with condor jobs 
+ipcSetPriority(1)
+
+printf("DZ: END OF LOCAL CUSTOMIZATION LOADING\n")
+;-------------------------------------------------------------------------------

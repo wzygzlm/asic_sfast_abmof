@@ -1,0 +1,130 @@
+********************************************************************************
+*** GLOBALFOUNDRIES == GLOBALFOUNDRIES == GLOBALFOUNDRIES == GLOBALFOUNDRIES ***
+*
+*                       GLOBALFOUNDRIES CONFIDENTIAL
+*                       
+*       Process      : 28SLP                                                  
+*       File         : design_include.scs                                                         
+*       Release      : SM-BB-000041                                                           
+*       QA Simulator : cadenceMMSIM121
+*                                                                              
+*** GLOBALFOUNDRIES == GLOBALFOUNDRIES == GLOBALFOUNDRIES == GLOBALFOUNDRIES ***
+********************************************************************************
+
+************************************************************************************
+
+
+******************************************************
+* Spectre include file
+* and other user-defined library settings
+******************************************************
+include "./design.scs"
+
+* Choices are (noskew || skew) && (nomc || mc)
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/shared.lib.scs" section=noskew
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/shared.lib.scs" section=nomc
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/shared.scs"
+
+* BEOL
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/beol.lib.scs" section=noskew
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/beol.lib.scs" section=nomc
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/beol.scs"
+
+****** FET librarie/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/Devices
+* FET ske/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/mc/fixed corner libraries
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/skew.lib.scs" section=noskew
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/montecarlo.lib.scs" section=nomc
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/fixed_corner.lib.scs" section=TT
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/fet_param.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/fets.lib.scs" section=acvsubckt
+
+****** Passive librarie/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/Devices
+* Diodes
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diode_param.lib.scs" section=noskew
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diode_param.lib.scs" section=nomc
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diode_param.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diodenx.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/egdiodenx.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/zgdiodenx.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diodenwx.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diodepnw.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/egdiodepnw.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/zgdiodepnw.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diodepwtw.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diodetwx.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diodenwx_lvs.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diodepwtw_lvs.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/diodetwx_lvs.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/tdndsx.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/tdpdnw.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/egtdndsx.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/egtdpdnw.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/zgtdndsx.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/zgtdpdnw.scs"
+
+* Resistors
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/resistor_param.lib.scs" section=noskew
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/resistor_param.lib.scs" section=nomc
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/passive_fixed_corner.lib.scs" section=RTYP
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/resistor_param.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/opppcres.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/opreres.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/opndres.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/nwres.scs"
+
+* Mosvars
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/mosvar_param.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/passive_fixed_corner.lib.scs" section=CTYP
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/ncap.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/pcap.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/egncap.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/egpcap.scs"
+ahdl_include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/zgncap.va"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/zgncap.scs"
+
+* ESDs
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/esd_param.lib.scs" section=noskew
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/esd_param.lib.scs" section=nomc
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/design_include_esd.scs"
+
+* Bipolar
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/vpnp.lib.scs" section=noskew
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/vpnp.lib.scs" section=nomc
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/vpnp.scs"
+
+* Inductor
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/indstack.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/symindp.scs"
+
+* VNCAP
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/beol.lib.scs" section=VNCAP_TYP
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/vncap.scs"
+
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/apmom.scs"
+
+* Others
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/efuse.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/efuse2x2.scs"
+
+* LDMOS Devices
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/design_include_ldfet.scs"
+
+* -------------------- RF Capacitors ---------------------
+* RF moms
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/def.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/apmom_rf.scs" section=MOM_Typical
+
+* RF MOSVAR
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/mosvar_param.lib.scs" section=nomc
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/mosvar_param.lib.scs" section=noskew
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/mosvar_param.lib.scs" section=tt
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/mosvar_eqn.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/mosvar_dio.scs"
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/mosvar_rf.scs"
+
+* ----------------- Silicided Resistor -------------------
+include "/usr/pack/global-28-kgf/gf/slp/2015.10/Spectre/models/design_include_silicided_resistor.scs"
+
+**********************************************************
+temperature_min_check assert expr="temp" min=-55 message="Minimum temperature exceeded" 
+temperature_max_check assert expr="temp" max=150 message="Maximum temperature exceeded" 

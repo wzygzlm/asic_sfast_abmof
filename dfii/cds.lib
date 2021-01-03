@@ -1,0 +1,9 @@
+SOFTINCLUDE $IUSHOME/tools/inca/files/cds.lib
+INCLUDE $PDK_HOME/cdslib/$BEOL_STACK/cds.lib
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib 
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic 
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib 
+DEFINE io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/oa.dz/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr
+DEFINE sc7mc_cmos28slp_base_rvt_c34 /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/oa.dz/sc7mc_cmos28slp_base_rvt_c34
