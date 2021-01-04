@@ -8,9 +8,9 @@
 `timescale 1 ns / 1 ps
 module rwSAE_2_s_saeHW_V_0_ram (addr0, ce0, q0, addr1, ce1, d1, we1, q1,  clk);
 
-parameter DWIDTH = 1024;
-parameter AWIDTH = 12;
-parameter MEM_SIZE = 4086;
+parameter DWIDTH = 128;
+parameter AWIDTH = 11;
+parameter MEM_SIZE = 1600;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -70,9 +70,9 @@ module rwSAE_2_s_saeHW_V_0(
     d1,
     q1);
 
-parameter DataWidth = 32'd1024;
-parameter AddressRange = 32'd4086;
-parameter AddressWidth = 32'd12;
+parameter DataWidth = 32'd128;
+parameter AddressRange = 32'd1600;
+parameter AddressWidth = 32'd11;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

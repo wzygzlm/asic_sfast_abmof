@@ -33,7 +33,7 @@ set search_path [concat ../technology/db $search_path]
 
 
 #****** link library ******
-set link_library   [list "*" sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p80v_25c.db sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c.db]
+set link_library   [list "*" sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p80v_25c.db sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c.db sram_dp_hde_hvt_rvt_1600x128m4_tt_1p0v_1p0v_25c.db]
 
 
 #****** define command aliases ******
@@ -50,7 +50,7 @@ if {$synopsys_program_name =="dc_shell"} {
 
 
   #****** std.cells/pads, macro cell: symbol, target and link library ******
-  set target_library [list sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p80v_25c.db sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c.db]
+  set target_library [list sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr_tt_nominal_1p00v_1p80v_25c.db sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c.db sram_dp_hde_hvt_rvt_1600x128m4_tt_1p0v_1p0v_25c.db]
   set symbol_library [list /usr/pack/global-28-kgf/arm/gf/cmos28slp/sc7mc_base_rvt_c34/r1p0/sdb/sc7mc_cmos28slp_base_rvt_c34.sdb /usr/pack/global-28-kgf/arm/gf/cmos28lp/io_gppr_t18_mv11_mv18_tl25_rvt_dr/r6p0/sdb/io_gppr_cmos28lp_t18_mv11_mv18_tl25_rvt_dr.sdb]
   set alib_library_analysis_path "./alib"
 

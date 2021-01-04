@@ -4,524 +4,230 @@ Report : timing
         -path full
         -delay max
         -max_paths 1
-Design : rwSAEPerfectLoopStre
+Design : testRwSAEHW
 Version: Q-2019.12
-Date   : Sun Jan  3 22:03:07 2021
+Date   : Mon Jan  4 15:29:02 2021
 ****************************************
-
- # A fanout number of 1000 was used for high fanout net computations.
 
 Operating Conditions: tt_nominal_max_1p00v_25c   Library: sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
 Wire Load Model Mode: top
 
-  Startpoint: ap_clk_r_REG222_S2
+  Startpoint: grp_rwSAE_2_s_fu_61/ap_clk_r_REG2_S2
               (rising edge-triggered flip-flop clocked by ap_clk)
-  Endpoint: ap_clk_r_REG227_S3
+  Endpoint: ap_clk_r_REG51_S1
             (rising edge-triggered flip-flop clocked by ap_clk)
   Path Group: ap_clk
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
+  testRwSAEHW        Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock ap_clk (rise edge)                              0.0000     0.0000
   clock network delay (ideal)                           0.0000     0.0000
-  ap_clk_r_REG222_S2/CK (DFFQA_X1M_A7TR_C34)            0.0000     0.0000 r
-  ap_clk_r_REG222_S2/Q (DFFQA_X1M_A7TR_C34)             0.1310     0.1310 r
-  U2923/Y (INV_X0P5B_A7TR_C34)                          0.1862     0.3172 f
-  U2930/Y (OA21B_X0P7M_A7TR_C34)                        0.2277     0.5449 f
-  U2931/Y (INV_X0P5B_A7TR_C34)                          0.2421     0.7871 r
-  U2948/Y (NAND3_X0P5A_A7TR_C34)                        0.1841     0.9712 f
-  U2949/Y (OAI31_X0P5M_A7TR_C34)                        0.1189     1.0900 r
-  U2950/Y (NOR2_X0P5A_A7TR_C34)                         0.1426     1.2326 f
-  U2951/Y (NAND2XB_X0P5M_A7TR_C34)                      0.1439     1.3765 f
-  U2955/Y (OAI21_X0P5M_A7TR_C34)                        0.1916     1.5681 r
-  U2963/Y (NAND2_X0P5A_A7TR_C34)                        0.1659     1.7340 f
-  U2964/Y (OAI21_X0P5M_A7TR_C34)                        0.1952     1.9292 r
-  U2969/Y (AO21B_X0P5M_A7TR_C34)                        0.1421     2.0713 f
-  U2977/CO (ADDF_X1M_A7TR_C34)                          0.1456     2.2169 f
-  U2978/Y (AOI22BB_X0P7M_A7TR_C34)                      0.1116     2.3285 f
-  U2979/Y (AOI22BB_X0P7M_A7TR_C34)                      0.1544     2.4829 f
-  U2981/Y (NOR2_X0P5A_A7TR_C34)                         0.1357     2.6185 r
-  U3001/Y (AOI211_X0P5M_A7TR_C34)                       0.1004     2.7189 f
-  U3002/Y (OA21B_X0P7M_A7TR_C34)                        0.1435     2.8624 r
-  U3039/CO (ADDF_X1M_A7TR_C34)                          0.1183     2.9808 r
-  U3041/Y (NAND2_X0P5A_A7TR_C34)                        0.0998     3.0805 f
-  U2708/Y (NOR2_X0P5A_A7TR_C34)                         0.2081     3.2887 r
-  U3111/Y (NOR2_X0P5A_A7TR_C34)                         0.1301     3.4188 f
-  U3113/Y (NAND2_X0P5A_A7TR_C34)                        0.0814     3.5002 r
-  U3114/Y (OAI211_X0P5M_A7TR_C34)                       0.1219     3.6221 f
-  U3115/Y (AOI22BB_X0P7M_A7TR_C34)                      0.1333     3.7554 f
-  U3116/Y (AO22_X0P5M_A7TR_C34)                         0.1144     3.8698 f
-  ap_clk_r_REG227_S3/D (DFFQA_X1M_A7TR_C34)             0.0001     3.8699 f
-  data arrival time                                                3.8699
+  grp_rwSAE_2_s_fu_61/ap_clk_r_REG2_S2/CK (DFFQA_X1M_A7TR_C34)
+                                                        0.0000     0.0000 r
+  grp_rwSAE_2_s_fu_61/ap_clk_r_REG2_S2/Q (DFFQA_X1M_A7TR_C34)
+                                                        0.0937     0.0937 f
+  grp_rwSAE_2_s_fu_61/U8/Y (INV_X0P5B_A7TR_C34)         0.0935     0.1872 r
+  grp_rwSAE_2_s_fu_61/U6/Y (OAI2XB1_X0P7M_A7TR_C34)     0.0868     0.2740 f
+  U13/Y (AND2_X0P7M_A7TR_C34)                           0.0893     0.3633 f
+  U21/Y (NOR3_X0P5A_A7TR_C34)                           0.1218     0.4850 r
+  ap_clk_r_REG51_S1/D (DFFQA_X1M_A7TR_C34)              0.0001     0.4851 r
+  data arrival time                                                0.4851
 
   clock ap_clk (rise edge)                             10.0000    10.0000
   clock network delay (ideal)                           0.0000    10.0000
-  ap_clk_r_REG227_S3/CK (DFFQA_X1M_A7TR_C34)            0.0000    10.0000 r
-  library setup time                                   -0.0721     9.9279
-  data required time                                               9.9279
+  ap_clk_r_REG51_S1/CK (DFFQA_X1M_A7TR_C34)             0.0000    10.0000 r
+  library setup time                                   -0.1008     9.8992
+  data required time                                               9.8992
   --------------------------------------------------------------------------
-  data required time                                               9.9279
-  data arrival time                                               -3.8699
+  data required time                                               9.8992
+  data arrival time                                               -0.4851
   --------------------------------------------------------------------------
-  slack (MET)                                                      6.0581
+  slack (MET)                                                      9.4141
 
 
-  Startpoint: glPLSFASTSliceScale2_3_U
+  Startpoint: grp_rwSAE_2_s_fu_61/saeHW_V_0_U
               (rising edge-triggered flip-flop clocked by ap_clk)
-  Endpoint: ap_clk_r_REG89_S10
+  Endpoint: grp_rwSAE_2_s_fu_61/saeHW_V_0_U
             (rising edge-triggered flip-flop clocked by ap_clk)
   Path Group: synopsys_pg_from_macros_1
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
+  testRwSAEHW        Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock ap_clk (rise edge)                              0.0000     0.0000
   clock network delay (ideal)                           0.0000     0.0000
-  glPLSFASTSliceScale2_3_U/CLKA (sram_dp_hde_hvt_rvt_512x128m4)
+  grp_rwSAE_2_s_fu_61/saeHW_V_0_U/CLKA (sram_dp_hde_hvt_rvt_1600x128m4)
                                                         0.0000     0.0000 r
-  glPLSFASTSliceScale2_3_U/QA[30] (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.8206     0.8206 f
-  U3518/Y (AOI22_X0P5M_A7TR_C34)                        0.0730     0.8937 r
-  U3519/Y (NAND2_X0P5A_A7TR_C34)                        0.1200     1.0136 f
-  U3523/Y (AOI22_X0P5M_A7TR_C34)                        0.1261     1.1397 r
-  U3531/Y (NAND4_X0P5M_A7TR_C34)                        0.1315     1.2712 f
-  U3560/Y (AOI22_X0P5M_A7TR_C34)                        0.1332     1.4045 r
-  U3561/Y (NAND2_X0P5A_A7TR_C34)                        0.1708     1.5753 f
-  U3913/Y (AOI31_X0P5M_A7TR_C34)                        0.3845     1.9597 r
-  U4084/Y (BUF_X0P8B_A7TR_C34)                          0.4095     2.3692 r
-  U4096/Y (NAND2_X0P5A_A7TR_C34)                        0.3158     2.6850 f
-  U4111/Y (OAI2XB1_X0P5M_A7TR_C34)                      0.2761     2.9612 r
-  U4112/Y (BUF_X0P8B_A7TR_C34)                          0.4034     3.3645 r
-  U5436/Y (AOI22BB_X0P7M_A7TR_C34)                      0.2107     3.5752 f
-  U5437/Y (AOI22BB_X0P7M_A7TR_C34)                      0.1153     3.6905 r
-  ap_clk_r_REG89_S10/D (DFFQA_X1M_A7TR_C34)             0.0001     3.6906 r
-  data arrival time                                                3.6906
+  grp_rwSAE_2_s_fu_61/saeHW_V_0_U/QA[96] (sram_dp_hde_hvt_rvt_1600x128m4)
+                                                        0.9361     0.9361 r
+  grp_rwSAE_2_s_fu_61/U306/Y (AO22_X0P5M_A7TR_C34)      0.1395     1.0756 r
+  grp_rwSAE_2_s_fu_61/saeHW_V_0_U/DB[96] (sram_dp_hde_hvt_rvt_1600x128m4)
+                                                        0.0003     1.0759 r
+  data arrival time                                                1.0759
 
   clock ap_clk (rise edge)                             10.0000    10.0000
   clock network delay (ideal)                           0.0000    10.0000
-  ap_clk_r_REG89_S10/CK (DFFQA_X1M_A7TR_C34)            0.0000    10.0000 r
-  library setup time                                   -0.0901     9.9099
-  data required time                                               9.9099
+  grp_rwSAE_2_s_fu_61/saeHW_V_0_U/CLKB (sram_dp_hde_hvt_rvt_1600x128m4)
+                                                        0.0000    10.0000 r
+  library setup time                                   -0.0035     9.9965
+  data required time                                               9.9965
   --------------------------------------------------------------------------
-  data required time                                               9.9099
-  data arrival time                                               -3.6906
+  data required time                                               9.9965
+  data arrival time                                               -1.0759
   --------------------------------------------------------------------------
-  slack (MET)                                                      6.2193
+  slack (MET)                                                      8.9207
 
 
-  Startpoint: glPLSFASTSliceScale2_2_U
-              (rising edge-triggered flip-flop clocked by ap_clk)
-  Endpoint: ap_clk_r_REG89_S10
-            (rising edge-triggered flip-flop clocked by ap_clk)
-  Path Group: synopsys_pg_from_macros_3
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ap_clk (rise edge)                              0.0000     0.0000
-  clock network delay (ideal)                           0.0000     0.0000
-  glPLSFASTSliceScale2_2_U/CLKA (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.0000     0.0000 r
-  glPLSFASTSliceScale2_2_U/QA[30] (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.8206     0.8206 f
-  U3518/Y (AOI22_X0P5M_A7TR_C34)                        0.0833     0.9039 r
-  U3519/Y (NAND2_X0P5A_A7TR_C34)                        0.1200     1.0239 f
-  U3523/Y (AOI22_X0P5M_A7TR_C34)                        0.1261     1.1500 r
-  U3531/Y (NAND4_X0P5M_A7TR_C34)                        0.1315     1.2815 f
-  U3560/Y (AOI22_X0P5M_A7TR_C34)                        0.1332     1.4147 r
-  U3561/Y (NAND2_X0P5A_A7TR_C34)                        0.1708     1.5855 f
-  U3913/Y (AOI31_X0P5M_A7TR_C34)                        0.3845     1.9700 r
-  U4084/Y (BUF_X0P8B_A7TR_C34)                          0.4095     2.3795 r
-  U4096/Y (NAND2_X0P5A_A7TR_C34)                        0.3158     2.6953 f
-  U4111/Y (OAI2XB1_X0P5M_A7TR_C34)                      0.2761     2.9714 r
-  U4112/Y (BUF_X0P8B_A7TR_C34)                          0.4034     3.3748 r
-  U5436/Y (AOI22BB_X0P7M_A7TR_C34)                      0.2107     3.5855 f
-  U5437/Y (AOI22BB_X0P7M_A7TR_C34)                      0.1153     3.7008 r
-  ap_clk_r_REG89_S10/D (DFFQA_X1M_A7TR_C34)             0.0001     3.7009 r
-  data arrival time                                                3.7009
-
-  clock ap_clk (rise edge)                             10.0000    10.0000
-  clock network delay (ideal)                           0.0000    10.0000
-  ap_clk_r_REG89_S10/CK (DFFQA_X1M_A7TR_C34)            0.0000    10.0000 r
-  library setup time                                   -0.0901     9.9099
-  data required time                                               9.9099
-  --------------------------------------------------------------------------
-  data required time                                               9.9099
-  data arrival time                                               -3.7009
-  --------------------------------------------------------------------------
-  slack (MET)                                                      6.2090
-
-
-  Startpoint: glPLSFASTSliceScale2_1_U
-              (rising edge-triggered flip-flop clocked by ap_clk)
-  Endpoint: ap_clk_r_REG89_S10
-            (rising edge-triggered flip-flop clocked by ap_clk)
-  Path Group: synopsys_pg_from_macros_5
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ap_clk (rise edge)                              0.0000     0.0000
-  clock network delay (ideal)                           0.0000     0.0000
-  glPLSFASTSliceScale2_1_U/CLKA (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.0000     0.0000 r
-  glPLSFASTSliceScale2_1_U/QA[126] (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.8206     0.8206 f
-  U3525/Y (AOI22_X0P5M_A7TR_C34)                        0.0833     0.9039 r
-  U3526/Y (NAND2_X0P5A_A7TR_C34)                        0.1200     1.0239 f
-  U3530/Y (AOI22_X0P5M_A7TR_C34)                        0.1255     1.1494 r
-  U3531/Y (NAND4_X0P5M_A7TR_C34)                        0.1315     1.2809 f
-  U3560/Y (AOI22_X0P5M_A7TR_C34)                        0.1332     1.4141 r
-  U3561/Y (NAND2_X0P5A_A7TR_C34)                        0.1708     1.5849 f
-  U3913/Y (AOI31_X0P5M_A7TR_C34)                        0.3845     1.9694 r
-  U4084/Y (BUF_X0P8B_A7TR_C34)                          0.4095     2.3789 r
-  U4096/Y (NAND2_X0P5A_A7TR_C34)                        0.3158     2.6947 f
-  U4111/Y (OAI2XB1_X0P5M_A7TR_C34)                      0.2761     2.9708 r
-  U4112/Y (BUF_X0P8B_A7TR_C34)                          0.4034     3.3742 r
-  U5436/Y (AOI22BB_X0P7M_A7TR_C34)                      0.2107     3.5849 f
-  U5437/Y (AOI22BB_X0P7M_A7TR_C34)                      0.1153     3.7002 r
-  ap_clk_r_REG89_S10/D (DFFQA_X1M_A7TR_C34)             0.0001     3.7003 r
-  data arrival time                                                3.7003
-
-  clock ap_clk (rise edge)                             10.0000    10.0000
-  clock network delay (ideal)                           0.0000    10.0000
-  ap_clk_r_REG89_S10/CK (DFFQA_X1M_A7TR_C34)            0.0000    10.0000 r
-  library setup time                                   -0.0901     9.9099
-  data required time                                               9.9099
-  --------------------------------------------------------------------------
-  data required time                                               9.9099
-  data arrival time                                               -3.7003
-  --------------------------------------------------------------------------
-  slack (MET)                                                      6.2096
-
-
-  Startpoint: glPLSFASTSliceScale2_U
-              (rising edge-triggered flip-flop clocked by ap_clk)
-  Endpoint: ap_clk_r_REG89_S10
-            (rising edge-triggered flip-flop clocked by ap_clk)
-  Path Group: synopsys_pg_from_macros_7
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ap_clk (rise edge)                              0.0000     0.0000
-  clock network delay (ideal)                           0.0000     0.0000
-  glPLSFASTSliceScale2_U/CLKA (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.0000     0.0000 r
-  glPLSFASTSliceScale2_U/QA[110] (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.8206     0.8206 f
-  U3511/Y (AOI22_X0P5M_A7TR_C34)                        0.0833     0.9039 r
-  U3512/Y (NAND2_X0P5A_A7TR_C34)                        0.1222     1.0261 f
-  U3516/Y (AOI22_X0P5M_A7TR_C34)                        0.1251     1.1512 r
-  U3531/Y (NAND4_X0P5M_A7TR_C34)                        0.1307     1.2819 f
-  U3560/Y (AOI22_X0P5M_A7TR_C34)                        0.1332     1.4152 r
-  U3561/Y (NAND2_X0P5A_A7TR_C34)                        0.1708     1.5860 f
-  U3913/Y (AOI31_X0P5M_A7TR_C34)                        0.3845     1.9704 r
-  U4084/Y (BUF_X0P8B_A7TR_C34)                          0.4095     2.3799 r
-  U4096/Y (NAND2_X0P5A_A7TR_C34)                        0.3158     2.6957 f
-  U4111/Y (OAI2XB1_X0P5M_A7TR_C34)                      0.2761     2.9719 r
-  U4112/Y (BUF_X0P8B_A7TR_C34)                          0.4034     3.3752 r
-  U5436/Y (AOI22BB_X0P7M_A7TR_C34)                      0.2107     3.5859 f
-  U5437/Y (AOI22BB_X0P7M_A7TR_C34)                      0.1153     3.7012 r
-  ap_clk_r_REG89_S10/D (DFFQA_X1M_A7TR_C34)             0.0001     3.7013 r
-  data arrival time                                                3.7013
-
-  clock ap_clk (rise edge)                             10.0000    10.0000
-  clock network delay (ideal)                           0.0000    10.0000
-  ap_clk_r_REG89_S10/CK (DFFQA_X1M_A7TR_C34)            0.0000    10.0000 r
-  library setup time                                   -0.0901     9.9099
-  data required time                                               9.9099
-  --------------------------------------------------------------------------
-  data required time                                               9.9099
-  data arrival time                                               -3.7013
-  --------------------------------------------------------------------------
-  slack (MET)                                                      6.2086
-
-
-  Startpoint: polStream_V_V_empty_n
-              (input port clocked by ap_clk)
-  Endpoint: ap_clk_r_REG288_S1
+  Startpoint: ap_start (input port clocked by ap_clk)
+  Endpoint: ap_clk_r_REG51_S1
             (rising edge-triggered flip-flop clocked by ap_clk)
   Path Group: synopsys_pg_inputs
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
+  testRwSAEHW        Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock ap_clk (rise edge)                              0.0000     0.0000
   clock network delay (ideal)                           0.0000     0.0000
   input external delay                                  0.0500     0.0500 r
-  polStream_V_V_empty_n (in)                            0.0000     0.0500 r
-  U2622/Y (AND4_X0P5M_A7TR_C34)                         0.0832     0.1332 r
-  U2706/Y (NAND2_X0P5A_A7TR_C34)                        0.0620     0.1952 f
-  U2670/Y (AOI31_X0P7M_A7TR_C34)                        0.1169     0.3121 r
-  U2769/Y (AO21A1AI2_X1M_A7TR_C34)                      0.1911     0.5032 f
-  U2557/Y (INV_X2B_A7TR_C34)                            0.3469     0.8502 r
-  U2689/Y (NAND2_X0P5A_A7TR_C34)                        0.4356     1.2858 f
-  U3053/Y (NOR2_X1A_A7TR_C34)                           0.3663     1.6521 r
-  U2673/Y (INV_X0P5B_A7TR_C34)                          0.1612     1.8133 f
-  U2560/Y (NOR2_X2A_A7TR_C34)                           0.2924     2.1057 r
-  U3056/Y (INV_X1B_A7TR_C34)                            0.3925     2.4982 f
-  U5494/Y (AOI22BB_X0P7M_A7TR_C34)                      0.1877     2.6859 f
-  ap_clk_r_REG288_S1/D (DFFQA_X1M_A7TR_C34)             0.0001     2.6860 f
-  data arrival time                                                2.6860
+  ap_start (in)                                         0.0000     0.0500 r
+  U20/Y (NOR2_X0P5A_A7TR_C34)                           0.0275     0.0775 f
+  U21/Y (NOR3_X0P5A_A7TR_C34)                           0.1176     0.1951 r
+  ap_clk_r_REG51_S1/D (DFFQA_X1M_A7TR_C34)              0.0001     0.1952 r
+  data arrival time                                                0.1952
 
   clock ap_clk (rise edge)                             10.0000    10.0000
   clock network delay (ideal)                           0.0000    10.0000
-  ap_clk_r_REG288_S1/CK (DFFQA_X1M_A7TR_C34)            0.0000    10.0000 r
-  library setup time                                   -0.1041     9.8959
-  data required time                                               9.8959
+  ap_clk_r_REG51_S1/CK (DFFQA_X1M_A7TR_C34)             0.0000    10.0000 r
+  library setup time                                   -0.1008     9.8992
+  data required time                                               9.8992
   --------------------------------------------------------------------------
-  data required time                                               9.8959
-  data arrival time                                               -2.6860
+  data required time                                               9.8992
+  data arrival time                                               -0.1952
   --------------------------------------------------------------------------
-  slack (MET)                                                      7.2099
+  slack (MET)                                                      9.7040
 
 
-  Startpoint: ap_clk_r_REG222_S2
+  Startpoint: grp_rwSAE_2_s_fu_61/ap_clk_r_REG34_S2
               (rising edge-triggered flip-flop clocked by ap_clk)
-  Endpoint: glPLSFASTSliceScale2_3_U
+  Endpoint: grp_rwSAE_2_s_fu_61/saeHW_V_0_U
             (rising edge-triggered flip-flop clocked by ap_clk)
   Path Group: synopsys_pg_to_macros_0
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
+  testRwSAEHW        Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock ap_clk (rise edge)                              0.0000     0.0000
   clock network delay (ideal)                           0.0000     0.0000
-  ap_clk_r_REG222_S2/CK (DFFQA_X1M_A7TR_C34)            0.0000     0.0000 r
-  ap_clk_r_REG222_S2/Q (DFFQA_X1M_A7TR_C34)             0.0979     0.0979 f
-  U2923/Y (INV_X0P5B_A7TR_C34)                          0.2046     0.3025 r
-  U2930/Y (OA21B_X0P7M_A7TR_C34)                        0.3345     0.6370 r
-  U2931/Y (INV_X0P5B_A7TR_C34)                          0.2891     0.9261 f
-  U2932/Y (NOR2_X0P5A_A7TR_C34)                         0.1891     1.1152 r
-  U2942/Y (NOR2_X0P5A_A7TR_C34)                         0.1024     1.2176 f
-  U2944/Y (NAND3BB_X0P5M_A7TR_C34)                      0.1345     1.3521 f
-  U3086/Y (OAI21_X0P5M_A7TR_C34)                        0.1456     1.4977 r
-  U3087/Y (AO21B_X0P5M_A7TR_C34)                        0.1294     1.6271 r
-  U3088/Y (AO21B_X0P5M_A7TR_C34)                        0.1156     1.7427 f
-  U3089/Y (OAI2XB1_X0P5M_A7TR_C34)                      0.1603     1.9031 r
-  U3093/CO (ADDF_X1M_A7TR_C34)                          0.1217     2.0248 r
-  U3090/Y (NOR2_X0P5A_A7TR_C34)                         0.0746     2.0994 f
-  U3091/Y (AO21_X0P5M_A7TR_C34)                         0.1258     2.2252 f
-  U5094/CO (ADDF_X1M_A7TR_C34)                          0.1128     2.3380 f
-  U5096/CO (ADDF_X1M_A7TR_C34)                          0.1015     2.4396 f
-  U3097/Y (NAND3_X0P5A_A7TR_C34)                        0.0833     2.5229 r
-  U3098/Y (OA21B_X0P7M_A7TR_C34)                        0.1615     2.6843 r
-  U4108/Y (AO21B_X0P5M_A7TR_C34)                        0.0998     2.7841 f
-  U4109/Y (AO21B_X0P7M_A7TR_C34)                        0.2018     2.9859 r
-  glPLSFASTSliceScale2_3_U/AA[7] (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.0001     2.9860 r
-  data arrival time                                                2.9860
+  grp_rwSAE_2_s_fu_61/ap_clk_r_REG34_S2/CK (DFFQA_X1M_A7TR_C34)
+                                                        0.0000     0.0000 r
+  grp_rwSAE_2_s_fu_61/ap_clk_r_REG34_S2/Q (DFFQA_X1M_A7TR_C34)
+                                                        0.1235     0.1235 r
+  grp_rwSAE_2_s_fu_61/U33/Y (NAND2_X0P5A_A7TR_C34)      0.1879     0.3114 f
+  grp_rwSAE_2_s_fu_61/U369/Y (NAND2XB_X0P5M_A7TR_C34)   0.3271     0.6384 f
+  U60/Y (NOR2B_X0P5M_A7TR_C34)                          0.2384     0.8769 r
+  U42/Y (AOI21_X0P5M_A7TR_C34)                          0.1753     1.0521 f
+  U41/Y (INV_X0P5B_A7TR_C34)                            0.3092     1.3614 r
+  grp_rwSAE_2_s_fu_61/U387/Y (NAND2_X0P5A_A7TR_C34)     0.2056     1.5669 f
+  grp_rwSAE_2_s_fu_61/U388/Y (OAI21_X0P5M_A7TR_C34)     0.1312     1.6981 r
+  grp_rwSAE_2_s_fu_61/U389/Y (NAND2_X0P5A_A7TR_C34)     0.1345     1.8326 f
+  grp_rwSAE_2_s_fu_61/U638/Y (NAND2_X0P5A_A7TR_C34)     0.1134     1.9460 r
+  grp_rwSAE_2_s_fu_61/U639/Y (AO21B_X0P5M_A7TR_C34)     0.0974     2.0434 r
+  grp_rwSAE_2_s_fu_61/U640/Y (OAI21_X0P5M_A7TR_C34)     0.1038     2.1472 f
+  grp_rwSAE_2_s_fu_61/intadd_2/U7/CO (ADDF_X1M_A7TR_C34)
+                                                        0.1480     2.2952 f
+  grp_rwSAE_2_s_fu_61/intadd_2/U6/S (ADDF_X1M_A7TR_C34)
+                                                        0.1227     2.4179 r
+  grp_rwSAE_2_s_fu_61/U539/Y (AO22_X0P5M_A7TR_C34)      0.1436     2.5615 r
+  grp_rwSAE_2_s_fu_61/U541/Y (XOR2_X0P5M_A7TR_C34)      0.2000     2.7616 r
+  grp_rwSAE_2_s_fu_61/U542/Y (AND2_X0P5M_A7TR_C34)      0.1450     2.9065 r
+  grp_rwSAE_2_s_fu_61/DP_OP_4381J2_124_318/U6/CO (ADDF_X1M_A7TR_C34)
+                                                        0.0962     3.0028 r
+  grp_rwSAE_2_s_fu_61/DP_OP_4381J2_124_318/U5/CO (ADDF_X1M_A7TR_C34)
+                                                        0.0849     3.0877 r
+  grp_rwSAE_2_s_fu_61/DP_OP_4381J2_124_318/U4/CO (ADDF_X1M_A7TR_C34)
+                                                        0.0847     3.1724 r
+  grp_rwSAE_2_s_fu_61/DP_OP_4381J2_124_318/U3/CO (ADDF_X1M_A7TR_C34)
+                                                        0.0750     3.2473 r
+  grp_rwSAE_2_s_fu_61/U629/Y (XOR2_X0P5M_A7TR_C34)      0.1022     3.3495 r
+  grp_rwSAE_2_s_fu_61/U635/Y (AO21B_X0P5M_A7TR_C34)     0.1320     3.4815 r
+  grp_rwSAE_2_s_fu_61/saeHW_V_0_U/AA[10] (sram_dp_hde_hvt_rvt_1600x128m4)
+                                                        0.0002     3.4817 r
+  data arrival time                                                3.4817
 
   clock ap_clk (rise edge)                             10.0000    10.0000
   clock network delay (ideal)                           0.0000    10.0000
-  glPLSFASTSliceScale2_3_U/CLKA (sram_dp_hde_hvt_rvt_512x128m4)
+  grp_rwSAE_2_s_fu_61/saeHW_V_0_U/CLKA (sram_dp_hde_hvt_rvt_1600x128m4)
                                                         0.0000    10.0000 r
-  library setup time                                   -0.3179     9.6821
-  data required time                                               9.6821
+  library setup time                                   -0.2485     9.7515
+  data required time                                               9.7515
   --------------------------------------------------------------------------
-  data required time                                               9.6821
-  data arrival time                                               -2.9860
+  data required time                                               9.7515
+  data arrival time                                               -3.4817
   --------------------------------------------------------------------------
-  slack (MET)                                                      6.6961
+  slack (MET)                                                      6.2698
 
 
-  Startpoint: ap_clk_r_REG222_S2
+  Startpoint: grp_rwSAE_2_s_fu_61/ap_clk_r_REG34_S2
               (rising edge-triggered flip-flop clocked by ap_clk)
-  Endpoint: glPLSFASTSliceScale2_2_U
+  Endpoint: grp_rwSAE_2_s_fu_61/ap_clk_r_REG42_S3
             (rising edge-triggered flip-flop clocked by ap_clk)
-  Path Group: synopsys_pg_to_macros_2
+  Path Group: synopsys_pg_to_regs_0
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
+  testRwSAEHW        Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock ap_clk (rise edge)                              0.0000     0.0000
   clock network delay (ideal)                           0.0000     0.0000
-  ap_clk_r_REG222_S2/CK (DFFQA_X1M_A7TR_C34)            0.0000     0.0000 r
-  ap_clk_r_REG222_S2/Q (DFFQA_X1M_A7TR_C34)             0.0979     0.0979 f
-  U2923/Y (INV_X0P5B_A7TR_C34)                          0.2046     0.3025 r
-  U2930/Y (OA21B_X0P7M_A7TR_C34)                        0.3345     0.6370 r
-  U2931/Y (INV_X0P5B_A7TR_C34)                          0.2891     0.9261 f
-  U2932/Y (NOR2_X0P5A_A7TR_C34)                         0.1891     1.1152 r
-  U2942/Y (NOR2_X0P5A_A7TR_C34)                         0.1024     1.2176 f
-  U2944/Y (NAND3BB_X0P5M_A7TR_C34)                      0.1345     1.3521 f
-  U3086/Y (OAI21_X0P5M_A7TR_C34)                        0.1456     1.4977 r
-  U3087/Y (AO21B_X0P5M_A7TR_C34)                        0.1294     1.6271 r
-  U3088/Y (AO21B_X0P5M_A7TR_C34)                        0.1156     1.7427 f
-  U3089/Y (OAI2XB1_X0P5M_A7TR_C34)                      0.1603     1.9031 r
-  U3093/CO (ADDF_X1M_A7TR_C34)                          0.1217     2.0248 r
-  U3090/Y (NOR2_X0P5A_A7TR_C34)                         0.0746     2.0994 f
-  U3091/Y (AO21_X0P5M_A7TR_C34)                         0.1258     2.2252 f
-  U5094/CO (ADDF_X1M_A7TR_C34)                          0.1128     2.3380 f
-  U5096/CO (ADDF_X1M_A7TR_C34)                          0.1015     2.4396 f
-  U3097/Y (NAND3_X0P5A_A7TR_C34)                        0.0833     2.5229 r
-  U3098/Y (OA21B_X0P7M_A7TR_C34)                        0.1615     2.6843 r
-  U4108/Y (AO21B_X0P5M_A7TR_C34)                        0.0998     2.7841 f
-  U4109/Y (AO21B_X0P7M_A7TR_C34)                        0.2018     2.9859 r
-  glPLSFASTSliceScale2_2_U/AA[7] (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.0001     2.9860 r
-  data arrival time                                                2.9860
+  grp_rwSAE_2_s_fu_61/ap_clk_r_REG34_S2/CK (DFFQA_X1M_A7TR_C34)
+                                                        0.0000     0.0000 r
+  grp_rwSAE_2_s_fu_61/ap_clk_r_REG34_S2/Q (DFFQA_X1M_A7TR_C34)
+                                                        0.1235     0.1235 r
+  grp_rwSAE_2_s_fu_61/U33/Y (NAND2_X0P5A_A7TR_C34)      0.1879     0.3114 f
+  grp_rwSAE_2_s_fu_61/U369/Y (NAND2XB_X0P5M_A7TR_C34)   0.3271     0.6384 f
+  U60/Y (NOR2B_X0P5M_A7TR_C34)                          0.2384     0.8769 r
+  U42/Y (AOI21_X0P5M_A7TR_C34)                          0.1753     1.0521 f
+  U41/Y (INV_X0P5B_A7TR_C34)                            0.3092     1.3614 r
+  grp_rwSAE_2_s_fu_61/U466/Y (NAND2_X0P5A_A7TR_C34)     0.1672     1.5285 f
+  U39/Y (NAND2B_X0P5M_A7TR_C34)                         0.1717     1.7002 f
+  U38/Y (AND2_X0P5B_A7TR_C34)                           0.1208     1.8211 f
+  grp_rwSAE_2_s_fu_61/U527/Y (INV_X0P5B_A7TR_C34)       0.2727     2.0937 r
+  grp_rwSAE_2_s_fu_61/U706/Y (AOI22BB_X0P7M_A7TR_C34)   0.1933     2.2870 f
+  grp_rwSAE_2_s_fu_61/ap_clk_r_REG42_S3/D (DFFQA_X1M_A7TR_C34)
+                                                        0.0001     2.2871 f
+  data arrival time                                                2.2871
 
   clock ap_clk (rise edge)                             10.0000    10.0000
   clock network delay (ideal)                           0.0000    10.0000
-  glPLSFASTSliceScale2_2_U/CLKA (sram_dp_hde_hvt_rvt_512x128m4)
+  grp_rwSAE_2_s_fu_61/ap_clk_r_REG42_S3/CK (DFFQA_X1M_A7TR_C34)
                                                         0.0000    10.0000 r
-  library setup time                                   -0.3179     9.6821
-  data required time                                               9.6821
+  library setup time                                   -0.1009     9.8991
+  data required time                                               9.8991
   --------------------------------------------------------------------------
-  data required time                                               9.6821
-  data arrival time                                               -2.9860
+  data required time                                               9.8991
+  data arrival time                                               -2.2871
   --------------------------------------------------------------------------
-  slack (MET)                                                      6.6961
-
-
-  Startpoint: ap_clk_r_REG222_S2
-              (rising edge-triggered flip-flop clocked by ap_clk)
-  Endpoint: glPLSFASTSliceScale2_1_U
-            (rising edge-triggered flip-flop clocked by ap_clk)
-  Path Group: synopsys_pg_to_macros_4
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ap_clk (rise edge)                              0.0000     0.0000
-  clock network delay (ideal)                           0.0000     0.0000
-  ap_clk_r_REG222_S2/CK (DFFQA_X1M_A7TR_C34)            0.0000     0.0000 r
-  ap_clk_r_REG222_S2/Q (DFFQA_X1M_A7TR_C34)             0.0979     0.0979 f
-  U2923/Y (INV_X0P5B_A7TR_C34)                          0.2046     0.3025 r
-  U2930/Y (OA21B_X0P7M_A7TR_C34)                        0.3345     0.6370 r
-  U2931/Y (INV_X0P5B_A7TR_C34)                          0.2891     0.9261 f
-  U2932/Y (NOR2_X0P5A_A7TR_C34)                         0.1891     1.1152 r
-  U2942/Y (NOR2_X0P5A_A7TR_C34)                         0.1024     1.2176 f
-  U2944/Y (NAND3BB_X0P5M_A7TR_C34)                      0.1345     1.3521 f
-  U3086/Y (OAI21_X0P5M_A7TR_C34)                        0.1456     1.4977 r
-  U3087/Y (AO21B_X0P5M_A7TR_C34)                        0.1294     1.6271 r
-  U3088/Y (AO21B_X0P5M_A7TR_C34)                        0.1156     1.7427 f
-  U3089/Y (OAI2XB1_X0P5M_A7TR_C34)                      0.1603     1.9031 r
-  U3093/CO (ADDF_X1M_A7TR_C34)                          0.1217     2.0248 r
-  U3090/Y (NOR2_X0P5A_A7TR_C34)                         0.0746     2.0994 f
-  U3091/Y (AO21_X0P5M_A7TR_C34)                         0.1258     2.2252 f
-  U5094/CO (ADDF_X1M_A7TR_C34)                          0.1128     2.3380 f
-  U5096/CO (ADDF_X1M_A7TR_C34)                          0.1015     2.4396 f
-  U3097/Y (NAND3_X0P5A_A7TR_C34)                        0.0833     2.5229 r
-  U3098/Y (OA21B_X0P7M_A7TR_C34)                        0.1615     2.6843 r
-  U4108/Y (AO21B_X0P5M_A7TR_C34)                        0.0998     2.7841 f
-  U4109/Y (AO21B_X0P7M_A7TR_C34)                        0.2018     2.9859 r
-  glPLSFASTSliceScale2_1_U/AA[7] (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.0001     2.9860 r
-  data arrival time                                                2.9860
-
-  clock ap_clk (rise edge)                             10.0000    10.0000
-  clock network delay (ideal)                           0.0000    10.0000
-  glPLSFASTSliceScale2_1_U/CLKA (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.0000    10.0000 r
-  library setup time                                   -0.3179     9.6821
-  data required time                                               9.6821
-  --------------------------------------------------------------------------
-  data required time                                               9.6821
-  data arrival time                                               -2.9860
-  --------------------------------------------------------------------------
-  slack (MET)                                                      6.6961
-
-
-  Startpoint: ap_clk_r_REG222_S2
-              (rising edge-triggered flip-flop clocked by ap_clk)
-  Endpoint: glPLSFASTSliceScale2_U
-            (rising edge-triggered flip-flop clocked by ap_clk)
-  Path Group: synopsys_pg_to_macros_6
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  rwSAEPerfectLoopStre
-                     Small                 sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ap_clk (rise edge)                              0.0000     0.0000
-  clock network delay (ideal)                           0.0000     0.0000
-  ap_clk_r_REG222_S2/CK (DFFQA_X1M_A7TR_C34)            0.0000     0.0000 r
-  ap_clk_r_REG222_S2/Q (DFFQA_X1M_A7TR_C34)             0.0979     0.0979 f
-  U2923/Y (INV_X0P5B_A7TR_C34)                          0.2046     0.3025 r
-  U2930/Y (OA21B_X0P7M_A7TR_C34)                        0.3345     0.6370 r
-  U2931/Y (INV_X0P5B_A7TR_C34)                          0.2891     0.9261 f
-  U2932/Y (NOR2_X0P5A_A7TR_C34)                         0.1891     1.1152 r
-  U2942/Y (NOR2_X0P5A_A7TR_C34)                         0.1024     1.2176 f
-  U2944/Y (NAND3BB_X0P5M_A7TR_C34)                      0.1345     1.3521 f
-  U3086/Y (OAI21_X0P5M_A7TR_C34)                        0.1456     1.4977 r
-  U3087/Y (AO21B_X0P5M_A7TR_C34)                        0.1294     1.6271 r
-  U3088/Y (AO21B_X0P5M_A7TR_C34)                        0.1156     1.7427 f
-  U3089/Y (OAI2XB1_X0P5M_A7TR_C34)                      0.1603     1.9031 r
-  U3093/CO (ADDF_X1M_A7TR_C34)                          0.1217     2.0248 r
-  U3090/Y (NOR2_X0P5A_A7TR_C34)                         0.0746     2.0994 f
-  U3091/Y (AO21_X0P5M_A7TR_C34)                         0.1258     2.2252 f
-  U5094/CO (ADDF_X1M_A7TR_C34)                          0.1128     2.3380 f
-  U5096/CO (ADDF_X1M_A7TR_C34)                          0.1015     2.4396 f
-  U3097/Y (NAND3_X0P5A_A7TR_C34)                        0.0833     2.5229 r
-  U3098/Y (OA21B_X0P7M_A7TR_C34)                        0.1615     2.6843 r
-  U4108/Y (AO21B_X0P5M_A7TR_C34)                        0.0998     2.7841 f
-  U4109/Y (AO21B_X0P7M_A7TR_C34)                        0.2018     2.9859 r
-  glPLSFASTSliceScale2_U/AA[7] (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.0001     2.9860 r
-  data arrival time                                                2.9860
-
-  clock ap_clk (rise edge)                             10.0000    10.0000
-  clock network delay (ideal)                           0.0000    10.0000
-  glPLSFASTSliceScale2_U/CLKA (sram_dp_hde_hvt_rvt_512x128m4)
-                                                        0.0000    10.0000 r
-  library setup time                                   -0.3179     9.6821
-  data required time                                               9.6821
-  --------------------------------------------------------------------------
-  data required time                                               9.6821
-  data arrival time                                               -2.9860
-  --------------------------------------------------------------------------
-  slack (MET)                                                      6.6961
+  slack (MET)                                                      7.6120
 
 
 1

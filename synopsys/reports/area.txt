@@ -1,33 +1,32 @@
  
 ****************************************
 Report : area
-Design : rwSAEPerfectLoopStre
+Design : testRwSAEHW
 Version: Q-2019.12
-Date   : Sun Jan  3 22:03:06 2021
+Date   : Mon Jan  4 15:29:02 2021
 ****************************************
 
 Information: Updating design information... (UID-85)
-Warning: Design 'rwSAEPerfectLoopStre' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Library(s) Used:
 
     sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c (File: /home/inichang/minliu_icdesign/technology/db/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db)
-    sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c (File: /home/inichang/minliu_icdesign/technology/db/sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c.db)
+    sram_dp_hde_hvt_rvt_1600x128m4_tt_1p0v_1p0v_25c (File: /home/inichang/minliu_icdesign/technology/db/sram_dp_hde_hvt_rvt_1600x128m4_tt_1p0v_1p0v_25c.db)
 
-Number of ports:                          134
-Number of nets:                          4370
-Number of cells:                         3280
-Number of combinational cells:           2932
-Number of sequential cells:               344
-Number of macros/black boxes:               4
-Number of buf/inv:                        151
-Number of references:                      84
+Number of ports:                          144
+Number of nets:                          1213
+Number of cells:                          836
+Number of combinational cells:            769
+Number of sequential cells:                66
+Number of macros/black boxes:               1
+Number of buf/inv:                         56
+Number of references:                      58
 
-Combinational area:               1601.145017
-Buf/Inv area:                       44.863000
-Noncombinational area:             595.867991
-Macro/Black Box area:           193108.734375
+Combinational area:                523.614005
+Buf/Inv area:                       16.198000
+Noncombinational area:             114.113998
+Macro/Black Box area:            95780.765625
 Net Interconnect area:               0.000000
 
-Total cell area:                195305.747383
-Total area:                     195305.747383
+Total cell area:                 96418.493628
+Total area:                      96418.493628
 1

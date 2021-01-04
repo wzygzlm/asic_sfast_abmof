@@ -2,26 +2,20 @@
 ****************************************
 check_design summary:
 Version:     Q-2019.12
-Date:        Sun Jan  3 21:29:28 2021
+Date:        Mon Jan  4 15:28:13 2021
 ****************************************
 
                    Name                                            Total
 --------------------------------------------------------------------------------
-Inputs/Outputs                                                      6
-    Unconnected ports (LINT-28)                                     6
+Inputs/Outputs                                                      2
+    Unconnected ports (LINT-28)                                     1
+    Constant outputs (LINT-52)                                      1
 
-Designs                                                             1
-    Multiply instantiated designs (LINT-45)                         1
+Nets                                                                1
+    Unloaded nets (LINT-2)                                          1
 --------------------------------------------------------------------------------
 
-Warning: In design 'rwSAEPerfectLoopStre', port 'xStream_V_V_dout[1]' is not connected to any nets. (LINT-28)
-Warning: In design 'rwSAEPerfectLoopStre', port 'xStream_V_V_dout[0]' is not connected to any nets. (LINT-28)
-Warning: In design 'rwSAEPerfectLoopStre', port 'yStream_V_V_dout[9]' is not connected to any nets. (LINT-28)
-Warning: In design 'rwSAEPerfectLoopStre', port 'yStream_V_V_dout[1]' is not connected to any nets. (LINT-28)
-Warning: In design 'rwSAEPerfectLoopStre', port 'yStream_V_V_dout[0]' is not connected to any nets. (LINT-28)
-Warning: In design 'rwSAEPerfectLoopStre', port 'polStream_V_V_dout[0]' is not connected to any nets. (LINT-28)
-Information: Design 'SFAST_process_datMgi_ID1_NUM_STAGE1_din0_WIDTH128_din1_WIDTH128_din2_WIDTH128_din3_WIDTH128_din4_WIDTH2_dout_WIDTH128' is instantiated 3 times. (LINT-45)
-         Cell 'SFAST_process_datMgi_U21' in design 'rwSAEPerfectLoopStre' 
-         Cell 'SFAST_process_datMgi_U22' in design 'rwSAEPerfectLoopStre' 
-         Cell 'SFAST_process_datMgi_U23' in design 'rwSAEPerfectLoopStre' 
+Warning: In design 'testRwSAEHW', net 'grp_rwSAE_2_s_fu_61_ap_idle' driven by pin 'grp_rwSAE_2_s_fu_61/ap_idle' has no loads. (LINT-2)
+Warning: In design 'rwSAE_2_s', port 'y_V[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'rwSAE_2_s', output port 'outputData_V_address1[0]' is connected directly to 'logic 1'. (LINT-52)
 1

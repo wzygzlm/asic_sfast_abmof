@@ -6,16 +6,16 @@ Warning: Design has unannotated black box outputs. (PWR-428)
 ****************************************
 Report : power
         -analysis_effort high
-Design : rwSAEPerfectLoopStre
+Design : testRwSAEHW
 Version: Q-2019.12
-Date   : Sun Jan  3 22:03:09 2021
+Date   : Mon Jan  4 15:29:03 2021
 ****************************************
 
 
 Library(s) Used:
 
     sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c (File: /home/inichang/minliu_icdesign/technology/db/sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c.db)
-    sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c (File: /home/inichang/minliu_icdesign/technology/db/sram_dp_hde_hvt_rvt_512x128m4_tt_1p0v_1p0v_25c.db)
+    sram_dp_hde_hvt_rvt_1600x128m4_tt_1p0v_1p0v_25c (File: /home/inichang/minliu_icdesign/technology/db/sram_dp_hde_hvt_rvt_1600x128m4_tt_1p0v_1p0v_25c.db)
 
 
 Operating Conditions: tt_nominal_max_1p00v_25c   Library: sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
@@ -23,7 +23,7 @@ Wire Load Model Mode: top
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-rwSAEPerfectLoopStre   Small             sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
+testRwSAEHW            Small             sc7mc_cmos28slp_base_rvt_c34_tt_nominal_max_1p00v_25c
 
 
 Global Operating Voltage = 1    
@@ -35,24 +35,24 @@ Power-specific unit information :
     Leakage Power Units = 1uW
 
 
-  Cell Internal Power  =  15.9046 mW  (100%)
-  Net Switching Power  =  28.7990 uW    (0%)
+  Cell Internal Power  =   4.0802 mW   (99%)
+  Net Switching Power  =  21.3534 uW    (1%)
                          ---------
-Total Dynamic Power    =  15.9334 mW  (100%)
+Total Dynamic Power    =   4.1016 mW  (100%)
 
-Cell Leakage Power     =  38.6993 uW
+Cell Leakage Power     =  16.4774 uW
 
 
                  Internal         Switching           Leakage            Total
 Power Group      Power            Power               Power              Power   (   %    )  Attrs
 --------------------------------------------------------------------------------------------------
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
-memory            15.8399        9.8104e-03           38.3920           15.8881  (  99.47%)
+memory             4.0613        2.4414e-03           16.3700            4.0801  (  99.08%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register       5.9816e-02        2.8962e-03            0.1227        6.2835e-02  (   0.39%)
+register       1.1225e-02        3.3823e-04        2.3425e-02        1.1587e-02  (   0.28%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  4.8357e-03        1.6102e-02            0.1846        2.1123e-02  (   0.13%)
+combinational  7.7155e-03        1.8546e-02        8.3936e-02        2.6346e-02  (   0.64%)
 --------------------------------------------------------------------------------------------------
-Total             15.9046 mW     2.8809e-02 mW        38.6993 uW        15.9721 mW
+Total              4.0802 mW     2.1326e-02 mW        16.4774 uW         4.1180 mW
 1

@@ -1,7 +1,7 @@
 #source /home/aimar/workspaces/perforce/asa_elt/hwdesign/elt/syn/elt_single_module_synth.tcl 
 sh clear
 
-set MODULE "rwSAEPerfectLoopStre"
+set MODULE "testRwSAEHW"
 set WS "/home/inichang/minliu_icdesign/"
 set LIBRARY WORK_TIMING
 set CLK_PERIOD 10
@@ -46,6 +46,9 @@ analyze -library WORK -format verilog {/home/inichang/minliu_icdesign/sourcecode
 #analyze -library WORK -format verilog {/home/inichang/minliu_icdesign/sourcecode/SFAST/fifo_w48_d10_S.v}
 #analyze -library WORK -format verilog {/home/inichang/minliu_icdesign/sourcecode/SFAST/preProcessStream.v}
 #analyze -library WORK -format verilog {/home/inichang/minliu_icdesign/sourcecode/SFAST/SFAST_process_datHfu.v}
+
+analyze -library WORK -format verilog {/home/inichang/minliu_icdesign/sourcecode/hls_fastcorner/testRwSAEHW.v}
+analyze -library WORK -format verilog {/home/inichang/minliu_icdesign/sourcecode/hls_fastcorner/rwSAE_2_s.v}
 
 elaborate ${MODULE} -architecture verilog -library WORK
 
